@@ -1,12 +1,19 @@
+import * as serviceWorker from './serviceWorker';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { GlobalStyle, theme } from 'config';
+import { Home } from './pages/Home';
+import { Main } from 'components/Main';
+import { ThemeProvider } from 'styled-components/macro';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Main>
+        <Home />
+      </Main>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
