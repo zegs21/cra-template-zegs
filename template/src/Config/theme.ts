@@ -1,7 +1,6 @@
-import {} from './styled-components';
+import {} from 'styled-components';
 
-const theme = {
-};
+const theme = {};
 
 declare module 'styled-components' {
   type Theme = typeof theme;

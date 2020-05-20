@@ -1,5 +1,5 @@
-import styled from 'Components/styled-components/macro';
-import { breakPoints } from 'config';
+import styled from 'styled-components/macro';
+import { breakPoints } from 'Config';
 
 const Main = styled.main`
   flex-grow: 1;
@@ -12,4 +12,4 @@ const Main = styled.main`
   }
 `;
 
-export { Main };
+export const Styled = { Main };

@@ -1,6 +1,7 @@
-import NotFound from 'Pages/NotFound';
 import { basicCondition } from './conditions';
 import { Home } from 'Pages/Home';
+import { NotFound } from 'Pages/NotFound';
+import { SomePage } from 'Pages/SomePage';
 
 interface Route {
   exact?: boolean;
@@ -17,10 +18,10 @@ const routes: Route[] = [
     path: '/',
   },
   {
-    component: PageWithCondition,
+    component: SomePage,
     path: '/condition',
     conditions: [basicCondition],
-    redirectPath: '/'
+    redirectPath: '/',
   },
   {
     component: NotFound,

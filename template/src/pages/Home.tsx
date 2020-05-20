@@ -1,4 +1,4 @@
-import React from 'Pages/react';
+import React from 'react';
 
 function Home() {
   return (

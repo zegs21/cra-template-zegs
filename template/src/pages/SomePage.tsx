@@ -1,6 +1,6 @@
-import React from 'Pages/react';
+import React from 'react';
 
-function Home() {
+function SomePage() {
   return (
     <div>
       This page has a condition
@@ -8,4 +8,4 @@ function Home() {
   );
 }
 
-export { Home };
+export { SomePage };
