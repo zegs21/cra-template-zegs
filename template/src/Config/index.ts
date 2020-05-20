@@ -1,4 +1,4 @@
 export { breakPoints } from './breakPoints';
-export { globalStyle } from './globalStyle';
-export { GraphQLProvider } from './GraphQLProvider';
+export { GlobalStyle } from './globalStyle';
+export { GraphQLProvider } from './graphQLProvider';
 export { theme } from './theme';
