@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'Components/styled-components/macro';
 import { breakPoints } from 'config';
 
 const Main = styled.main`

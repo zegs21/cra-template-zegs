@@ -1,22 +1,33 @@
 import * as serviceWorker from './serviceWorker';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { GlobalStyle, theme } from 'config';
-import { Home } from './pages/Home';
-import { Main } from 'components/Main';
+import { BrowserRouter } from 'react-router-dom';
+import { GlobalStyle, GraphQLProvider, theme } from 'Config';
+import { Main } from 'Components/Main';
+import { render } from 'react-dom';
+import { RoutesRenderer } from 'Routes/RoutesRenderer';
+import { StoreProvider } from 'Store';
 import { ThemeProvider } from 'styled-components/macro';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Main>
-        <Home />
-      </Main>
-    </ThemeProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <React.StrictMode>
+      <GraphQLProvider>
+        <StoreProvider>
+          <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            <BrowserRouter>
+              <Main>
+                <RoutesRenderer />
+              </Main>
+            </BrowserRouter>
+          </ThemeProvider>
+        </StoreProvider>
+      </GraphQLProvider>
+    </React.StrictMode>
+  );
+};
+
+render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

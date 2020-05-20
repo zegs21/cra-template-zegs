@@ -3,7 +3,7 @@ import React from 'Pages/react';
 function Home() {
   return (
     <div>
-      Default React template from Zegs
+      This page has a condition
     </div>
   );
 }
