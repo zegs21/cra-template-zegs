@@ -5,7 +5,7 @@ import { SomePage } from 'Pages/SomePage';
 
 interface Route {
   exact?: boolean;
-  component: () => Element;
+  component: () => JSX.Element;
   conditions?: (() => boolean)[];
   path: string;
   redirectPath?: string;
