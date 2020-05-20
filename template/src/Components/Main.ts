@@ -12,4 +12,4 @@ const Main = styled.main`
   }
 `;
 
-export const Styled = { Main };
+export { Main };
