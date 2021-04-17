@@ -21,11 +21,11 @@ npx create-react-app my-app --template zegs
 ├── src
 │   ├── Pages
 │   ├── Helpers
-|   |   ├── router
-|   │   │   ├── conditions.ts
-|   │   │   ├── routes.ts
-|   │   │   ├── RoutesRenderer.tsx
-|   │   │   ├── types.ts
+│   │   ├── router
+│   │   │   ├── conditions.ts
+│   │   │   ├── routes.ts
+│   │   │   ├── RoutesRenderer.tsx
+│   │   │   ├── types.ts
 │   └── index.tsx
 ├── .eslintrc.js
 ├── .prettierrc
