@@ -21,7 +21,7 @@ npx create-react-app my-app --template zegs
 ├── src
 │   ├── Pages
 │   ├── Helpers
-|   ├── | router
+|   |   ├── router
 |   │   │   ├── conditions.ts
 |   │   │   ├── routes.ts
 |   │   │   ├── RoutesRenderer.tsx
