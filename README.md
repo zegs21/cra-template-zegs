@@ -1,6 +1,6 @@
 # cra-template-zegs
 
-My personal prefered way to boostrap a React project
+Zegs' template for Create React App. Bootstrap React applications with a powerful custom router included
 
 ## Usage
 
@@ -13,27 +13,21 @@ npx create-react-app my-app --template zegs
 - TypeScript
 - ESLint
 - Prettier
-- ReactRouterDom and a custom RoutesRenderer with easy multiple conditions handler and redirects
-- StyledComponents
-- EasyPeasy as a state management solution
-- GraphQL with the URQL client
+- ReactRouterDom and a custom RoutesRenderer with easy multiple conditions handler, redirects and a search routes by name feature
 
 ## Directory structure
 
 ```bash
 ├── src
-│   ├── Components
-│   ├── Config
 │   ├── Pages
-│   ├── Routes
-│   │   ├── conditions.ts
-│   │   ├── routes.ts
-│   │   ├── RoutesRenderer.tsx
-│   ├── Store
-│   │   ├── models
+│   ├── Helpers
+|   ├── | router
+|   │   │   ├── conditions.ts
+|   │   │   ├── routes.ts
+|   │   │   ├── RoutesRenderer.tsx
+|   │   │   ├── types.ts
 │   └── index.tsx
-├── .babelrc (for styled-components)
 ├── .eslintrc.js
-├── .prettierrc.js
+├── .prettierrc
 ├── tsconfig.json
 ```
