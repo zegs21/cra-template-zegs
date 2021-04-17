@@ -1,24 +1,10 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  extends: [
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
-  ],
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
+  extends: ['react-app', 'react-app/jest', 'plugin:prettier/recommended'],
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'off'
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-restricted-imports': [
+      'error',
+      { patterns: ['@material-ui/*/*/*', '!@material-ui/core/test-utils/*'] },
+    ],
   },
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  }
 };
