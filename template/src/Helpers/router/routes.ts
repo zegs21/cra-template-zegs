@@ -1,6 +1,6 @@
 import { Home } from 'Pages/Home';
-import { NotFound } from 'Pages/NotFound';
 import { SomePage } from 'Pages/SomePage';
+import { NotFound } from 'Pages/NotFound';
 import { RouteI, RoutesNames } from './types';
 import { basicCondition } from './conditions';
 
@@ -12,10 +12,11 @@ const routes: RouteI[] = [
     path: '/',
   },
   {
-    component: SomePage,
-    path: '/condition',
+    name: 'SomePage',
+    page: SomePage,
+    path: '/some-page-with-condition',
     conditions: [basicCondition],
-    redirectPath: '/',
+    redirectFallback: '/',
   },
   {
     name: 'NotFound',

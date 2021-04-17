@@ -1,7 +1,8 @@
-const condition = true;
+import { ConditionI } from './types';
 
-function basicCondition() {
-  return condition;
+const basicCondition: ConditionI = {
+  check: () => true,
+  redirectPath: '/',
 };
 
 export { basicCondition };

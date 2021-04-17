@@ -1,5 +1,5 @@
 function SomePage() {
-  return <div>This page has a condition</div>;
+  return <div>This page has a condition to enter</div>;
 }
 
 export { SomePage };

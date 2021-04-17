@@ -1,4 +1,4 @@
-export type RoutesNames = 'Home' | 'NotFound';
+export type RoutesNames = 'Home' | 'SomePage' | 'NotFound';
 
 export interface ConditionI {
   check: () => boolean;
