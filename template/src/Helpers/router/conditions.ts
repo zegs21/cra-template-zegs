@@ -1,8 +1,11 @@
+import { getPathByRouteName } from './routes';
 import { ConditionI } from './types';
+
+const homePath = getPathByRouteName('Home');
 
 const basicCondition: ConditionI = {
   check: () => true,
-  redirectPath: '/',
+  redirectPath: homePath,
 };
 
 export { basicCondition };
